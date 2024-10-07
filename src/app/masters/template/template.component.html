@@ -1,0 +1,140 @@
+<button (click)="makePDF()">Download</button>
+<div id="content" #content>
+<div style="text-align: center">
+ <img src="../../../assets/images/undefined-finsol.png" style="height: 80px; width: 80px;">
+</div><br>
+ <div style="text-align: justify; width: 80%; margin-left: 10%;">
+   {{para}}
+ </div><br>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="row">
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <label>Indenter / Requestor</label>
+<table>
+  <tr>
+    <td class="q1">Name</td>
+    <td>Srinivasan Venkatesan</td>
+  </tr>
+  <tr>
+    <td class="q1">Organization</td>
+    <td>Arab Financial Services</td>
+  </tr>
+  <tr>
+    <td class="q1">Requestor from CRM</td>
+    <td></td>
+  </tr>
+</table>
+<label>Details</label>
+<table>
+  <tr>
+    <td class="q1">Starting Date</td>
+    <td>Yet to Decide</td>
+  </tr>
+  <tr>
+    <td class="q1">Ending Date</td>
+    <td>As Per Project Plan</td>
+  </tr>
+  <tr>
+    <td class="q1">Description</td>
+    <td>
+        To perform Development and testing activities for Below SOW<br><br>
+
+        <b>> SOW 8747-V1-Aafaq_MasterCard_ABU_Setup</b>
+        <table>
+          <tr style="text-align: center;">
+            <th style="text-align: center;" class="q2">Resource allotment</th>
+            <td>Hrs</td>
+          </tr>
+          <tr>
+            <td>Estimation effort</td>
+            <td>{{data[0].Effort_Estimation}}</td>
+          </tr>
+          <tr>
+            <td>DEV + UT + Review + UAT Impl</td>
+            <td>{{data[0].Development}}</td>
+          </tr>
+          <tr>
+            <td>Move Sheet Prep</td>
+            <td>{{data[0].Implementation_Preperations}}</td>
+          </tr>
+          <tr>
+            <td>Region Build (Y/N)</td>
+            <td>{{data[0].Region_Build}}</td>
+          </tr>
+          <tr>
+            <td>QA (Incl. Regression)</td>
+            <td>{{data[0].QA}}</td>
+          </tr>
+          <tr>
+            <td>QA Support (Batch + Defect Fix)</td>
+            <td>{{data[0].QA_Supprt}}</td>
+          </tr>
+          <tr>
+            <td>UAT Support based on complexity </td>
+            <td>{{data[0].UAT_Support}}</td>
+          </tr>
+          <tr>
+            <td>Delivery Documents (PROD handover)</td>
+            <td>{{data[0].Delivery_Documents}}</td>
+          </tr>
+          <tr>
+            <td>PROD Move Sheet Prep and Review</td>
+            <td>{{data[0].Production_Move_Sheet}}</td>
+          </tr>
+          <tr>
+            <td>Warranty Support</td>
+            <td>{{data[0].Warranty_Support}}</td>
+          </tr>
+          <tr>
+            <td>PMO Effort</td>
+            <td>{{data[0].PMO}}</td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+    <td>Fees</td>
+    <td>1889 USD</td>
+  </tr>
+  <tr>
+    <td>Expenses</td>
+    <td>All other expenses would be borne by vendor</td>
+  </tr>
+  <tr>
+    <td>Special Terms / Remarks</td>
+    <td></td>
+  </tr>
+</table>
+<label>Payment Schedule</label>
+<table>
+  <tr>
+    <td>Payment Schedule </td>
+  </tr>
+</table>
+<label>Signatures</label>
+<table>
+  <tr>
+    <td>For Finsol</td>
+    <td>For Arab Financial Services</td>
+  </tr>
+  <tr>
+    <td>Signature:</td>
+    <td>Signature:</td>
+  </tr>
+  <tr>
+    <td>Printed Name: Srinivasa Murthy Akella</td>
+    <td>Printed Name:</td>
+  </tr>
+  <tr>
+    <td>Designation: Director</td>
+    <td>Designation</td>
+  </tr>
+</table>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+    </div>
+  </div>
+</div>
+</div>

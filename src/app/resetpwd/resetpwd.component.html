@@ -1,0 +1,27 @@
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-xs-12 xol-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+      <mat-card>
+      <div class="form-group" style="text-align: center;">
+        <img src="assets/images/finsol.png" height="68px"><br>
+        <h4 style="color: red;font-size: 24px;">Reset Password</h4>
+        <button mat-icon-button matTooltip="Enter the Email detail here">
+          <mat-icon>info</mat-icon>
+        </button>
+      </div>
+      <div class="form-group" style="text-align: center;">
+      <form [formGroup]="adminform" (ngSubmit)="OnSubmit()" autocomplete="off">
+        <mat-form-field appearance="legacy" class="example-full-width">
+          <mat-label>Emailid <sup>*</sup></mat-label>
+          <input matInput formControlName="emailid">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="warn">Submit</button>
+      </form>
+    </div>
+    </mat-card>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+  </div>
+</div>

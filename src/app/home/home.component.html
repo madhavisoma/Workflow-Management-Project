@@ -1,0 +1,92 @@
+<header>
+    <mat-toolbar class="spec">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+          <a class="navbar-brand" style="margin-bottom: 25px;">
+            <img src="assets/images/finsol.png" class="erect" />
+          </a>
+        </div>
+        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11"></div>
+      </div>
+    </div>
+  </mat-toolbar>
+</header>
+<section style="margin-top: 80px">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <div class="bkgd-logins" style="text-align: center">
+          <h4 class="welcome-user">
+            Welcome To Finsol
+            <button
+              mat-icon-button
+              matTooltip="Please enter the login credentials here"
+            >
+              <mat-icon>info</mat-icon>
+            </button>
+          </h4>
+          <br />
+          <form
+              [formGroup]="adminform"
+              (ngSubmit)="onSubmit()"
+              autocomplete="off"
+            >
+          <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+              <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <label for="" class="name">Username:</label>
+                <input
+                  class="form-control"
+                  formControlName="name"
+                  matInput
+                  placeholder="Username"
+                  style="
+                    background: rgb(0, 0, 0, 0.5);
+                    background-color: transparent;
+                    color: white;
+                  "
+                  autofocus
+                />
+                <label for="" class="name">Password:</label>
+                <input
+                  class="form-control"
+                  formControlName="age"
+                  matInput
+                  type="password"
+                  placeholder="Password"
+                  style="
+                    background: rgb(0, 0, 0, 0.5);
+                    background-color: transparent;
+                    color: white;
+                  "
+                />
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+            </div>
+            <br>
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="text-align: start;">
+                  <div class="form-group">
+                    <button mat-raised-button color="warn" >Login</button>
+                    <!-- <span class="name" (click)="navigateToMaster()">Bank master</span>
+                    <span class="name" (click)="navigateToactivity()">Activity master</span>
+                    <span class="name" (click)="navigateToEmployee()">Employee Master</span>
+                    <span class="name" (click)="navigateToRequest()">Request master</span>
+                    <span class="name" (click)="navigateToProject()">Project master</span> -->
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="text-align: end;">
+                  <span class="name" (click)="navigateToResetPwd()">Forgot my Password?</span>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+              </div>
+            </form>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+    </div>
+  </div>
+</section>

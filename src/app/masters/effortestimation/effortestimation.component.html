@@ -1,0 +1,332 @@
+
+<mat-card class="card-height">
+<mat-toolbar color="primary">
+  <span>Finsol</span>
+  <div style="margin-left: 90%">
+    <mat-icon [routerLink]="['/masters/newproj']"> arrow_back </mat-icon>
+  </div>
+</mat-toolbar>
+  <form [formGroup]="adminform" (ngSubmit)="onSubmit()" autocomplete="off">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>Effort Estimation:</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input
+                matInput
+                type="number"
+                formControlName="Effort_Estimation"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>Development</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input matInput type="number" formControlName="Development" />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label>Implementation Preperation:</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input
+                matInput
+                type="number"
+                formControlName="Implementation_Preperations"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>Certification Support</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input
+                matInput
+                type="number"
+                formControlName="Certification_Support"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>Region Build</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input matInput type="number" formControlName="Region_build" />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>QA</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input matInput type="number" formControlName="QA" />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>QA Support</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input matInput type="number" formControlName="QA_Support" />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>UAT Support</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input matInput type="number" formControlName="UAT_Support" />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>Delivery Documents</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input
+                matInput
+                type="number"
+                formControlName="Delivery_Documents"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label>Production Move Sheet</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input
+                matInput
+                type="number"
+                formControlName="Production_Move_Sheet"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>Warranty Support</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input
+                matInput
+                type="number"
+                formControlName="Warranty_Support"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-label><br>PMO</mat-label>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Effort</mat-label>
+              <input matInput type="number" formControlName="PMO" />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <mat-form-field appearance="legacy">
+              <mat-label>Unit</mat-label>
+              <mat-select>
+                <mat-option value="Hour">Hour</mat-option>
+                <mat-option value="Month">Month</mat-option>
+                <mat-option value="Day">Day</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8"></div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+            <button mat-raised-button (click)="onSubmit()" color="primary">Save</button>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+            <button
+              mat-raised-button
+              type="reset"
+              color="warn"
+            >
+              Reset
+            </button>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+</mat-card>

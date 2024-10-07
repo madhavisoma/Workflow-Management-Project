@@ -1,0 +1,56 @@
+.spec{
+  height: 8rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px  rgba(0,0,0,0.2);
+  background: linear-gradient(315deg, #f4f6f3 0.04%, #f4f6f3 100%); // for bank
+}
+
+.blue {
+  background: linear-gradient(315deg, #f4f6f3 0.04%, #f4f6f3 100%); // for bank
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100vw;
+  height: 7.8rem;
+  }
+
+.erect{
+ height: 5.5rem;
+}
+
+.bkgd-login {
+
+  border-radius: 4px;
+  background-color: transparent; //rgba(255,255,255,0.92);
+  // box-shadow: 0 2px 2px 0 rgba(0,0,0,0.11);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(0,0,0,0.6);
+  padding: 10px 10px;
+  }
+
+  .bkgd-logins{
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background:rgba(0,0,0,0.6);
+    padding: 30px;
+  }
+
+  .welcome-user {
+
+  height: 32px;
+  /*  color: #777777;	 */
+  /* color: #53565B; */
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+
+  }
+
+
+  .name{
+    color:whitesmoke;
+    float: left;
+    font-weight: 300;
+    font-size: 18px;
+  }

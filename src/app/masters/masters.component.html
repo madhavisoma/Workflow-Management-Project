@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <span>Finsol</span>
+  <div style="margin-left: 1140px;">
+    <mat-icon [routerLink]="['']">
+      <img src="assets/images/signout.jpg" height="45px">
+    </mat-icon>
+  </div>
+</mat-toolbar>
+<div class="row">
+  <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> -->
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="margin-top: 20px;">
+    <mat-card class="card-height">
+    <mat-nav-list>
+      <mat-list-item [routerLink]="['/masters','activity']">Activity Master</mat-list-item>
+      <mat-list-item (click)="navigateToMaster()">Bank Master</mat-list-item>
+      <mat-list-item (click)="navigateToEmployee()">Employee Master</mat-list-item>
+      <mat-list-item (click)="navigateToRequest()">Request Master</mat-list-item>
+      <mat-list-item [routerLink]="['/masters/newreq']">New Request</mat-list-item>
+      <mat-list-item [routerLink]="['/masters/newproj']">New Project</mat-list-item>
+      <mat-list-item [routerLink]="['/masters/projectmaster']">Project Master</mat-list-item>
+      <!-- <mat-list-item [routerLink]="['/masters/upload']">Upload File</mat-list-item>
+      <mat-list-item [routerLink]="['/masters/file-upload']" >File-upload</mat-list-item> -->
+      <mat-list-item [routerLink]="['/masters/temp']">Template</mat-list-item>
+      <mat-list-item [routerLink]="['/masters/effort']">Effort Estimation</mat-list-item>
+      <mat-list-item [routerLink]="['/masters/setup']">Setup Master</mat-list-item>
+    </mat-nav-list>
+  </mat-card>
+  </div>
+  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" style="margin-top: 20px;">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- </div> -->
